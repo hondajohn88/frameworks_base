@@ -20,5 +20,7 @@ Copyright (C) 2015 The Android Open Source Project
         android:viewportHeight="24.0">
     <path
         android:pathData="M16.600000,8.600000l-4.600000,4.599999 -4.600000,-4.599999 -1.400000,1.400000 6.000000,6.000000 6.000000,-6.000000z"
-        android:fillColor="#FF000000"/>
+        android:fillColor="#FF777777"
+        android:textColor="@color/notification_guts_text_color"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
 </vector>
