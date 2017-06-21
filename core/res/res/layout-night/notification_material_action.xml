@@ -23,7 +23,7 @@
     android:layout_gravity="center"
     android:gravity="start|center_vertical"
     android:layout_marginStart="4dp"
-    android:textColor="@color/secondary_text_default_material_dark"
+    android:textColor="#777777"
     android:singleLine="true"
     android:ellipsize="end"
     android:background="@drawable/notification_material_action_background"
