@@ -16,7 +16,7 @@
     <color name="background_floating_material_dark">@color/material_grey_800</color>
 
     <!-- Notification action text/button -->
-    <color name="secondary_text_material_light">#FFFFFF</color>
+    <color name="secondary_text_material_light">#A2A2A2</color>
 
     <!-- Notification action text -->
     <color name="primary_text_default_material_dark">#FFFFFF</color>
@@ -24,7 +24,7 @@
     <!-- Notification action button -->
     <color name="notification_action_color_filter">#9F9F9F</color>
 
-    <color name="notification_action_list">#ffffffff</color>
+    <color name="notification_action_list">#ffffff</color>
     <color name="notification_material_background_color">#ff000000</color>
 
     <!-- The "inside" of a notification, reached via longpress -->

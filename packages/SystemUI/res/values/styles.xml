@@ -327,7 +327,7 @@
     <style name="TextAppearance.NotificationGuts">
         <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">roboto-regular</item>
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">#777777</item>
     </style>
 
     <style name="TextAppearance.NotificationGuts.Header">
@@ -336,16 +336,16 @@
     </style>
 
     <style name="TextAppearance.NotificationGuts.Secondary">
-        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textColor">#777777</item>
     </style>
 
     <style name="TextAppearance.NotificationGuts.Primary">
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">#777777</item>
         <item name="android:textSize">16sp</item>
     </style>
 
     <style name="TextAppearance.NotificationGuts.Radio">
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">#777777</item>
     </style>
 
     <style name="TextAppearance.NotificationGuts.Button">
