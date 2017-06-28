@@ -22,7 +22,7 @@
     android:gravity="center"
     android:maxLines="2"
     android:lineSpacingMultiplier="1.05026"
-    android:textColor="@color/segmented_button_text_selector"
+    android:textColor="#777777"
     android:background="@drawable/btn_borderless_rect"
     android:textAppearance="@style/TextAppearance.QS.SegmentedButton"
     android:minHeight="72dp" />
