@@ -115,9 +115,9 @@
 
     <color name="screen_pinning_request_window_bg">#80000000</color>
 
-    <color name="segmented_buttons_background">#14FFFFFF</color><!-- 8% white -->
-    <color name="segmented_button_selected">#FFFFFFFF</color>
-    <color name="segmented_button_unselected">@*android:color/quaternary_device_default_settings</color>
+    <color name="segmented_buttons_background">#FF777777</color><!-- 8% white -->
+    <color name="segmented_button_selected">#FF000000</color>
+    <color name="segmented_button_unselected">#CC000000</color>
 
     <color name="dark_mode_icon_color_single_tone">#99000000</color>
     <color name="dark_mode_icon_color_dual_tone_background">#3d000000</color>
@@ -137,9 +137,9 @@
     <color name="minimize_dock_shadow_start">#60000000</color>
     <color name="minimize_dock_shadow_end">#00000000</color>
 
-    <color name="default_remote_input_background">@*android:color/notification_default_color</color>
-    <color name="remote_input_text_enabled">#ffffffff</color>
-    <color name="remote_input_hint">#99ffffff</color>
+    <color name="default_remote_input_background">#ff777777</color>
+    <color name="remote_input_text_enabled">#ff000000</color>
+    <color name="remote_input_hint">#ccffffff</color>
 
     <color name="remote_input_accent">#eeeeee</color>
 

@@ -29,8 +29,8 @@ public final class CellSignalStrengthGsm extends CellSignalStrength implements P
     private static final boolean DBG = false;
 
     private static final int GSM_SIGNAL_STRENGTH_GREAT = 12;
-    private static final int GSM_SIGNAL_STRENGTH_GOOD = 8;
-    private static final int GSM_SIGNAL_STRENGTH_MODERATE = 5;
+    private static final int GSM_SIGNAL_STRENGTH_GOOD = 6;
+    private static final int GSM_SIGNAL_STRENGTH_MODERATE = 3;
 
     private int mSignalStrength; // Valid values are (0-31, 99) as defined in TS 27.007 8.5
     private int mBitErrorRate;   // bit error rate (0-7, 99) as defined in TS 27.007 8.5
