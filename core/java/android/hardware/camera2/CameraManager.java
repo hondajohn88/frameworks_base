@@ -65,6 +65,7 @@ public final class CameraManager {
     @SuppressWarnings("unused")
     private static final int API_VERSION_1 = 1;
     private static final int API_VERSION_2 = 2;
+    private static final int API_VERSION_3 = 3;
 
     private static final int CAMERA_TYPE_BACKWARD_COMPATIBLE = 0;
     private static final int CAMERA_TYPE_ALL = 1;
@@ -770,7 +771,7 @@ public final class CameraManager {
      * Queries the camera service if it supports a camera api directly, or needs a shim.
      *
      * @param cameraId a non-{@code null} camera identifier
-     * @param apiVersion the version, i.e. {@code API_VERSION_1} or {@code API_VERSION_2}
+     * @param apiVersion the version, i.e. {@code API_VERSION_1} or {@code API_VERSION_2} or {@code API_VERSION_3}
      * @return {@code true} if connecting will work for that device version.
      */
     private boolean supportsCameraApiLocked(String cameraId, int apiVersion) {
