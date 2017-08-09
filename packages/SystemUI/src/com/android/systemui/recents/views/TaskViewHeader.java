@@ -291,7 +291,25 @@ public class TaskViewHeader extends FrameLayout
                 ? 2 * mHeaderBarHeight
                 : mHeaderBarHeight);
         title.setLayoutParams(lp);
-        if (secondaryButton != null) {
+        title.setTextDirection(View.TEXT_DIRECTION_LOCALE);
+        //move task button
+        if (fourthButton != null) {
+            lp = new FrameLayout.LayoutParams(mHeaderBarHeight, mHeaderBarHeight, Gravity.END);
+            lp.setMarginEnd(4 * mHeaderBarHeight);
+            fourthButton.setLayoutParams(lp);
+            fourthButton.setPadding(mHeaderButtonPadding, mHeaderButtonPadding,
+                    mHeaderButtonPadding, mHeaderButtonPadding);
+        }
+        //app pinning button
+        if (thirdButton != null) {
+            lp = new FrameLayout.LayoutParams(mHeaderBarHeight, mHeaderBarHeight, Gravity.END);
+            lp.setMarginEnd(2 * mHeaderBarHeight); //2x so it goes to left of lock task button
+            thirdButton.setLayoutParams(lp);
+            thirdButton.setPadding(mHeaderButtonPadding, mHeaderButtonPadding,
+                    mHeaderButtonPadding, mHeaderButtonPadding);
+        }
+        //lock task button
+        if (secondButton != null) {
             lp = new FrameLayout.LayoutParams(mHeaderBarHeight, mHeaderBarHeight, Gravity.END);
             lp.setMarginEnd(mHeaderBarHeight);
             secondaryButton.setLayoutParams(lp);
