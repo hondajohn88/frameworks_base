@@ -126,9 +126,7 @@ public final class CachedBluetoothDevice implements Comparable<CachedBluetoothDe
             Log.d(TAG, "onProfileStateChanged: profile " + profile +
                     " newProfileState " + newProfileState);
         }
-        int bluetoothState = mLocalAdapter.getBluetoothState();
-        if (bluetoothState == BluetoothAdapter.STATE_TURNING_OFF ||
-                bluetoothState == BluetoothAdapter.STATE_OFF)
+        if (mLocalAdapter.getBluetoothState() == BluetoothAdapter.STATE_TURNING_OFF)
         {
             if (Utils.D) Log.d(TAG, " BT Turninig Off...Profile conn state change ignored...");
             return;

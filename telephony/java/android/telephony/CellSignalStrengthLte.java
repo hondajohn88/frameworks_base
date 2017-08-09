@@ -199,7 +199,7 @@ public final class CellSignalStrengthLte extends CellSignalStrength implements P
         int lteDbm = getDbm();
         if (lteDbm == Integer.MAX_VALUE) lteAsuLevel = 99;
         else if (lteDbm <= -140) lteAsuLevel = 0;
-        else if (lteDbm >= -53) lteAsuLevel = 97;
+        else if (lteDbm >= -43) lteAsuLevel = 97;
         else lteAsuLevel = lteDbm + 140;
         if (DBG) log("Lte Asu level: "+lteAsuLevel);
         return lteAsuLevel;

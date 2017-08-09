@@ -55,7 +55,6 @@ public class CameraBinderTest extends AndroidTestCase {
     // From ICameraService.h
     private static final int API_VERSION_1 = 1;
     private static final int API_VERSION_2 = 2;
-    private static final int API_VERSION_3 = 3;
 
     private static final int CAMERA_TYPE_BACKWARD_COMPATIBLE = 0;
     private static final int CAMERA_TYPE_ALL = 1;

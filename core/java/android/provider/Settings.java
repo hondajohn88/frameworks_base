@@ -6677,7 +6677,6 @@ public final class Settings {
 
         /**
          * Scaling value for smartbar custom button icon
-         * @hide
          */
         public static final String SMARTBAR_CUSTOM_ICON_SIZE = "smartbar_custom_icon_size";
 
@@ -8175,13 +8174,6 @@ public final class Settings {
          * @hide
          */
         public static final String TEXT_CHARGING_SYMBOL = "text_charging_symbol";
-
-        /**
-         * Whether to pulse the battery icon when charging
-         *
-         * @hide
-         */
-        public static final String STATUS_BAR_PULSE_CHARGING_BATTERY = "status_bar_pulse_charging_battery";
 
         /**
          * Whether the camera double twist gesture to flip between front and back mode should be
