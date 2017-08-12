@@ -82,6 +82,8 @@ public class CommandQueue extends IStatusBar.Stub {
     private static final int MSG_TOGGLE_LAST_APP               = 36 << MSG_SHIFT;
     private static final int MSG_TOGGLE_KILL_APP               = 37 << MSG_SHIFT;
     private static final int MSG_TOGGLE_SCREENSHOT             = 38 << MSG_SHIFT;
+    private static final int MSG_LEFT_IN_LANDSCAPE_STATE_CHANGED  = 39 << MSG_SHIFT;
+    private static final int MSG_TOGGLE_FLASHLIGHT  = 40 << MSG_SHIFT;
 
     public static final int FLAG_EXCLUDE_NONE = 0;
     public static final int FLAG_EXCLUDE_SEARCH_PANEL = 1 << 0;
@@ -139,6 +141,11 @@ public class CommandQueue extends IStatusBar.Stub {
         void clickTile(ComponentName tile);
         void handleSystemNavigationKey(int arg1);
         void screenPinningStateChanged(boolean enabled);
+<<<<<<< HEAD
+=======
+        void leftInLandscapeChanged(boolean isLeft);
+        void toggleFlashlight();
+>>>>>>> b965013ea55... DUtils: Migrate from broadcasts to API for some action handling [1/2]
         public void toggleLastApp();
         public void toggleKillApp();
         public void toggleScreenshot();
@@ -149,6 +156,24 @@ public class CommandQueue extends IStatusBar.Stub {
         mCallbacks = callbacks;
     }
 
+<<<<<<< HEAD
+=======
+    public void toggleFlashlight() {
+        synchronized (mLock) {
+            mHandler.removeMessages(MSG_TOGGLE_FLASHLIGHT);
+            mHandler.sendEmptyMessage(MSG_TOGGLE_FLASHLIGHT);
+        }
+    }
+
+    public void leftInLandscapeChanged(boolean isLeft) {
+        synchronized (mLock) {
+            mHandler.removeMessages(MSG_LEFT_IN_LANDSCAPE_STATE_CHANGED);
+            mHandler.obtainMessage(MSG_LEFT_IN_LANDSCAPE_STATE_CHANGED,
+                    isLeft ? 1 : 0, 0, null).sendToTarget();
+        }
+    }
+
+>>>>>>> b965013ea55... DUtils: Migrate from broadcasts to API for some action handling [1/2]
     public void screenPinningStateChanged(boolean enabled) {
         synchronized (mLock) {
             mHandler.removeMessages(MSG_SCREEN_PINNING_STATE_CHANGED);
@@ -583,6 +608,15 @@ public class CommandQueue extends IStatusBar.Stub {
                 case MSG_TOGGLE_SCREENSHOT:
                     mCallbacks.toggleScreenshot();
                     break;
+<<<<<<< HEAD
+=======
+                case MSG_LEFT_IN_LANDSCAPE_STATE_CHANGED:
+                    mCallbacks.leftInLandscapeChanged(msg.arg1 != 0);
+                    break;
+                case MSG_TOGGLE_FLASHLIGHT:
+                    mCallbacks.toggleFlashlight();
+                    break;
+>>>>>>> b965013ea55... DUtils: Migrate from broadcasts to API for some action handling [1/2]
             }
         }
     }
